@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  url: https://files.pythonhosted.org/packages/68/70/8f7ac67a67549796c091170863aee23d79b06c0dd5641c144e7d6d560ba8/lark_parser-0.10.0-py2.py3-none-any.whl
+  sha256: f7044d3a4ad42c07e853da590727d5f1e5f9c36e5795bdeb05227fe0bace2344
 
 build:
   number: 0
