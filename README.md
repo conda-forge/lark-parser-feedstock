@@ -5,9 +5,13 @@ Home: https://github.com/erezsh/lark
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lark-parser-feedstock/blob/master/LICENSE.txt)
 
 Summary: a modern parsing library
+
+Development: https://github.com/erezsh/lark
+
+Documentation: http://lark-parser.readthedocs.io/
 
 Lark is a modern general-purpose parsing library for Python.
 With Lark, you can parse any context-free grammar, efficiently, with very little code.
