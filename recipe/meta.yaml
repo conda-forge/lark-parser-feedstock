@@ -31,7 +31,6 @@ about:
   home: https://github.com/erezsh/lark
   license: MIT
   license_family: MIT
-  license_file: LICENSE
   summary: a modern parsing library
 
   description: |
