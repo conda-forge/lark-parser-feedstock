@@ -1,13 +1,13 @@
 {% set name = "lark-parser" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  git_rev: {{ version }}
-  git_url: https://github.com/lark-parser/lark.git
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lark-parser-{{ version }}.tar.gz
+  sha256: 20bdefdf1b6e9bcb38165ea5cc4f27921a99c6f4c35264a3a953fd60335f1f8c
 
 build:
   number: 0
