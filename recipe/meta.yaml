@@ -6,18 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lark-parser-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lark-parser-{{ version }}.tar.gz
   sha256: 15967db1f1214013dca65b1180745047b9be457d73da224fcda3d9dd4e96a138
 
 build:
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
     - python >=3.6
+    - regex
     - pip
+    - setuptools
   run:
     - python >=3.6
 
@@ -26,6 +28,10 @@ test:
     - lark
     - lark.parsers
     - lark.tools
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/erezsh/lark
